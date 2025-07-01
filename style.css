@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f9;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #801ae5;
+    margin-bottom: 20px;
+}
+
+/* Search Input */
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Category Filter Dropdown */
+#categoryFilter {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Geolocation Button */
+#geoBtn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#geoBtn:hover {
+    background-color: #218838;
+}
+
+/* Map Box */
+#map {
+    height: 80vh;
+    width: 100%;
+    border: 2px solid #801ae5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Popup animation */
+.leaflet-popup-content-wrapper {
+    animation: popupFade 0.3s ease-in-out;
+}
+
+@keyframes popupFade {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    #searchInput, #categoryFilter {
+        width: 90%;
+        max-width: none;
+    }
+
+    #geoBtn {
+        width: 90%;
+    }
+}

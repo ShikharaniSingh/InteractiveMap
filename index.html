@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌍 Explore Points of Interest</h1>
+
+        <!-- Search bar -->
+        <input type="text" id="searchInput" placeholder="Search locations..." />
+
+        <!-- Category filter -->
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="monument">Monument</option>
+            <option value="heritage">Heritage</option>
+            <option value="park">Park</option>
+            <option value="beach">Beach</option>
+        </select>
+
+        <!-- Geolocation button -->
+        <button id="geoBtn">📍 Find My Location</button>
+
+        <!-- Map display -->
+        <div id="map"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
