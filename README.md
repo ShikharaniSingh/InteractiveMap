@@ -34,7 +34,7 @@ Edit
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/interactive-map.git
+   git clone https://github.com/ShikharaniSingh/interactive-map.git
 Open the folder:
 
 bash
