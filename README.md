@@ -22,7 +22,6 @@ interactive-map/
 ├── index.html
 ├── style.css
 ├── script.js
-├── assets/ (optional for screenshots)
 └── README.md
 
 yaml
